@@ -42,9 +42,8 @@ public class TestWithoutPageObject {
     public void TestAvito() throws InterruptedException{
         driver.get("https://avito.ru");
         driver.findElement(By.cssSelector("a[data-marker='header/login-button']")).click();
-        driver.findElement(By.cssSelector("input[data-marker='login-form/login']")).sendKeys("+79778085487",
-                Keys.TAB, "Zx4Cv6Bn8", Keys.ENTER);
-        Thread.sleep(50000);
+        driver.findElement(By.cssSelector("input[data-marker='login-form/login']")).sendKeys("",
+                Keys.TAB, "", Keys.ENTER);
         driver.findElement(By.xpath("//a[contains(text(),'Личные вещи')]")).click();
         driver.findElement(By.cssSelector("span[data-marker='delivery-filter/text']")).click();
         driver.findElement(By.cssSelector("button[data-marker='search-filters/submit-button']")).click();
